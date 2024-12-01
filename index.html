@@ -49,13 +49,18 @@
                         </a>
                     </li>
                     <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="fas fa-images nav__icon"></i> Qualification
+                        </a>
+                    </li>
+                    <li class="nav__item">
                         <a href="#services" class="nav__link">
                             <i class="fas fa-briefcase nav__icon"></i> Services
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#porfolio" class="nav__link">
-                            <i class="fas fa-images nav__icon"></i> Portfolio
+                        <a href="#project" class="nav__link">
+                            <i class="fas fa-lightbulb nav__icon"></i> Projects
                         </a>
                     </li>
                     <li class="nav__item">
@@ -84,6 +89,11 @@
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
+                        <a href="https://www.linkedin.com/in/noah-chiu-854764296/" target="_blank"
+                            class="home__social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
                         <a href="https://www.facebook.com/noah.chiu.351/" target="_blank" class="home__social-icon">
                             <i class="fab fa-facebook-f"></i>
                         </a>
@@ -94,11 +104,6 @@
 
                         <a href="https://x.com/Noah_Chiu" target="_blank" class="home__social-icon">
                             <i class="fab fa-twitter"></i>
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/noah-chiu-854764296/" target="_blank"
-                            class="home__social-icon">
-                            <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
 
@@ -160,7 +165,7 @@
                     </div>
 
                     <div class="about__button">
-                        <a download href="assets/pdf/cv.pdf" class="button button--flex">
+                        <a download href="assets/pdf/cv.pdf" target="_blank" class="button button--flex">
                             Download CV<i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
@@ -177,10 +182,10 @@
                 <div>
                     <div class="skills__content skills__open">
                         <div class="skills__header">
-                            <i class="uil uil-server-network skills__icon"></i>
+                            <i class="uil uil-brackets-curly skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Backend developer</h1>
+                                <h1 class="skills__title">Back-end developer</h1>
                                 <span class="skills__subtitle">More than 3 years</span>
                             </div>
 
@@ -191,10 +196,20 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Go</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__go"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PostgreSQL</h3>
                                     <span class="skills__number">80%</span>
                                 </div>
                                 <div class="skills__bar">
-                                    <span class="skills__percentage skills__php"></span>
+                                    <span class="skills__percentage skills__postgresql"></span>
                                 </div>
                             </div>
 
@@ -202,16 +217,6 @@
                                 <div class="skills__titles">
                                     <h3 class="skills__name">Python</h3>
                                     <span class="skills__number">70%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__node"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">PostgreSQL</h3>
-                                    <span class="skills__number">55%</span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__python"></span>
@@ -222,11 +227,11 @@
                 </div>
                 <div class="skills__content skills__close">
                     <div class="skills__header">
-                        <i class="uil uil-brackets-curly skills__icon"></i>
+                        <i class="uil uil-web-grid skills__icon"></i>
 
                         <div>
-                            <h1 class="skills__title">Frontend developer</h1>
-                            <span class="skills__subtitle">More than 4 years</span>
+                            <h1 class="skills__title">Front-end developer</h1>
+                            <span class="skills__subtitle">More than 2 years</span>
                         </div>
 
                         <i class="uil uil-angle-down skills__arrow"></i>
@@ -245,24 +250,23 @@
 
                         <div class="skills__data">
                             <div class="skills__titles">
-                                <h3 class="skills__name">CSS</h3>
+                                <h3 class="skills__name">React.js</h3>
                                 <span class="skills__number">70%</span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__html"></span>
+                                <span class="skills__percentage skills__react"></span>
                             </div>
                         </div>
 
                         <div class="skills__data">
                             <div class="skills__titles">
-                                <h3 class="skills__name">React.js</h3>
-                                <span class="skills__number">65%</span>
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills__number">55%</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__css"></span>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <!-- <div>
@@ -314,172 +318,122 @@
             </div>
         </section>
 
-        <section class="qualification section">
+        <section class="qualification section" id="qualification">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My personal journey</span>
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
-                        <i class="uil uil-graduation-cap qualification__icon"></i>
-                        Education
-                    </div>
-
-                    <div class="qualification__button button--flex" data-target='#work'>
+                    <div class="qualification__button button--flex qualification__active" data-target='#work'>
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
                         Work
                     </div>
-                </div>
-
-                <div class="qualification__sections">
-                    <div class="qualification__content qualification__active" data-content id="education">
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Electrical Engineering</h3>
-                                <span class="qualification__subtitle">Nei-Hu Vocational High School</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2014/9 - 2017/7
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">Electrical-Optical Engineering</h3>
-                                <span class="qualification__subtitle">Taipei University of Technology</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2017/9 - 2021/7
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="qualification__content" data-content id="work">
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">SalesPerson</h3>
-                                <span class="qualification__subtitle">FamiPart</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2015/2 - 2017/3
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-
-                            <div>
-                                <h3 class="qualification__title">SalesPerson</h3>
-                                <span class="qualification__subtitle">GIORDANO</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2018/2 - 2018/12
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">SalesPerson</h3>
-                                <span class="qualification__subtitle">SENAO</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2019/6 - 2019/9
-                                </div>
-                            </div>
-
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-                        
-                        <div class="qualification__data">
-                            <div></div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__title">Programming Assistant</h3>
-                                <span class="qualification__subtitle">iRobo</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2020/2 - 2020/7
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Intern of MIS</h3>
-                                <span class="qualification__subtitle">EVERLIGHT</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021/1 - 2021/6
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Back-end Engineer</h3>
-                                <span class="qualification__subtitle">Smart Automation Technology Co., Ltd.</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2021/8 - 2023/12
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <span class="qualification__line"></span>
-                            </div>
-                        </div>
-
-                        <div class="qualification__data">
-                            <div>
-                                <h3 class="qualification__title">Back-end Deputy Manager</h3>
-                                <span class="qualification__subtitle">Smart Automation Technology Co., Ltd.</span>
-                                <div class="qualification__calendar">
-                                    <i class="uil uil-calendar-alt"></i>
-                                    2023/12 - Present
-                                </div>
-                            </div>
-                            <div>
-                                <span class="qualification__rounder"></span>
-                                <!-- <span class="qualification__line"></span> -->
-                            </div>
-                        </div>
-
+                    <div class="qualification__button button--flex" data-target='#education'>
+                        <i class="uil uil-graduation-cap qualification__icon"></i>
+                        Education
                     </div>
                 </div>
+
+                <div class="qualification__sections"></div>
+                <div class="qualification__content qualification__active" data-content id="work">
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Programming Assistant</h3>
+                            <span class="qualification__subtitle">iRobo</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2020/2 - 2020/7
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__title">Intern of MIS</h3>
+                            <span class="qualification__subtitle">EVERLIGHT</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2021/1 - 2021/6
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Back-end Engineer</h3>
+                            <span class="qualification__subtitle">Smart Automation Technology Co., Ltd.</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2021/8 - 2023/12
+                            </div>
+                        </div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <!-- <span class="qualification__line"></span> -->
+                        </div>
+                        <div>
+                            <h3 class="qualification__title">Back-end Deputy Manager</h3>
+                            <span class="qualification__subtitle">Smart Automation Technology Co., Ltd.</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2023/12 - Present
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="qualification__content" data-content id="education">
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Electrical Engineering</h3>
+                            <span class="qualification__subtitle">Nei-Hu Vocational High School</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2014/9 - 2017/7
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+                    <div class="qualification__data">
+                        <div></div>
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <!-- <span class="qualification__line"></span> -->
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">Electrical-Optical Engineering</h3>
+                            <span class="qualification__subtitle">Taipei University of Technology</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2017/9 - 2021/7
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             </div>
         </section>
 
@@ -489,8 +443,8 @@
             <div class="services__container container grid">
                 <div class="services__content">
                     <div>
-                        <i class="uil uil-web-grid services__icon"></i>
-                        <h3 class="services__title">Ui/Ux <br> Designer</h3>
+                        <i class="uil uil-database services__icon"></i>
+                        <h3 class="services__title">System <br> Designer</h3>
                     </div>
 
                     <span class="button button--flex button--small button--link services__button">
@@ -500,27 +454,39 @@
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Ui/Ux <br> Designer</h4>
+                            <h4 class="services__modal-title">System Designer</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop the user interface.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Web page development.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create ux element interactions.</p>
-                                </li>
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I position your company brand.</p>
-                                </li>
-                            </ul>
+                            <hr style="border-color: #ffffffbe; margin-bottom: 1rem;">
+
+                            <div class="services__modal-system grid">
+                                <button class="services__modal-system-button button--flex">
+                                    <span class="services__modal-system-abbreviation">PLM</span>
+                                    <span class="services__modal-system-description">(Product Lifecycle
+                                        Management)</span>
+                                </button>
+                                <button class="services__modal-system-button button--flex">
+                                    <span class="services__modal-system-abbreviation">QMS</span>
+                                    <span class="services__modal-system-description">(Quality Management System)</span>
+                                </button>
+                                <button class="services__modal-system-button button--flex">
+                                    <span class="services__modal-system-abbreviation">HRM</span>
+                                    <span class="services__modal-system-description">(Human Resource Management)</span>
+                                </button>
+                                <button class="services__modal-system-button button--flex">
+                                    <span class="services__modal-system-abbreviation">WMS</span>
+                                    <span class="services__modal-system-description">(Warehouse Management
+                                        System)</span>
+                                </button>
+                                <button class="services__modal-system-button button--flex">
+                                    <span class="services__modal-system-abbreviation">PMS</span>
+                                    <span class="services__modal-system-description">(Purchase Management System)</span>
+                                </button>
+                                <button class="services__modal-system-button button--flex">
+                                    <span class="services__modal-system-abbreviation">OMS</span>
+                                    <span class="services__modal-system-description">(Order Management System)</span>
+                                </button>
+                            </div>
 
                         </div>
                     </div>
@@ -528,7 +494,7 @@
                 <div class="services__content">
                     <div>
                         <i class="uil uil-brackets-curly services__icon"></i>
-                        <h3 class="services__title">Frontend <br> Developer</h3>
+                        <h3 class="services__title">Back-end <br> Developer</h3>
                     </div>
 
                     <span class="button button--flex button--small button--link services__button">
@@ -538,25 +504,47 @@
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                            <h4 class="services__modal-title">Back-end Developer</h4>
                             <i class="uil uil-times services__modal-close"></i>
+
+                            <hr style="border-color: #ffffffbe; margin-bottom: 1rem;">
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop the user interface.</p>
+                                    <p>I develop robust backend APIs and services.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Web page development.</p>
+                                    <p>Real-time production analytics dashboards.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create ux element interactions.</p>
+                                    <p>ERP system integration and customization.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I position your company brand.</p>
+                                    <p>Database management and optimization.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Automate repetitive tasks to improve efficiency.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Implement CI/CD pipelines for faster deployment.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Utilize containerization for consistent environments.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Monitor and optimize system performance.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p>Develop scripts to automate data processing.</p>
                                 </li>
                             </ul>
 
@@ -565,8 +553,8 @@
                 </div>
                 <div class="services__content">
                     <div>
-                        <i class="uil uil-pen services__icon"></i>
-                        <h3 class="services__title">Branding <br> Designer</h3>
+                        <i class="uil uil-web-grid services__icon"></i>
+                        <h3 class="services__title">Front-end <br> Developer</h3>
                     </div>
 
                     <span class="button button--flex button--small button--link services__button">
@@ -576,25 +564,27 @@
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Branding <br> Designer</h4>
+                            <h4 class="services__modal-title">Front-end Developer</h4>
                             <i class="uil uil-times services__modal-close"></i>
+
+                            <hr style="border-color: #ffffffbe; margin-bottom: 1rem;">
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develop the user interface.</p>
+                                    <p>I develop the user interface using React.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Web page development.</p>
+                                    <p>Web page development with React components.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I create ux element interactions.</p>
+                                    <p>I create UX element interactions using React hooks.</p>
                                 </li>
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I position your company brand.</p>
+                                    <p>I position your company brand with React and CSS-in-JS.</p>
                                 </li>
                             </ul>
 
@@ -604,46 +594,46 @@
             </div>
         </section>
 
-        <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portfolio</h2>
+        <section class="project section" id="project">
+            <h2 class="section__title">Projects</h2>
             <span class="section__subtitle">Most recent work</span>
 
-            <div class="portfolio__container container swiper-container">
+            <div class="project__container project__bg container swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/love.jpg" alt="" class="portfolio__img">
+                    <div class="project__content grid swiper-slide">
+                        <img src="assets/img/love.jpg" alt="" class="project__img">
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Online Store</h3>
-                            <p class="portfolio__description">Website adaptable to all devices,
+                        <div class="project__data">
+                            <h3 class="project__title">Online Store</h3>
+                            <p class="project__description">Website adaptable to all devices,
                                 with ui components and animated interactions</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="#" class="button button--flex button--small project__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/pipe_4096.png" alt="" class="portfolio__img">
+                    <div class="project__content grid swiper-slide">
+                        <img src="assets/img/pipe_4096.png" alt="" class="project__img">
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Mordern Website</h3>
-                            <p class="portfolio__description">Website adaptable to all devices,
+                        <div class="project__data">
+                            <h3 class="project__title">Mordern Website</h3>
+                            <p class="project__description">Website adaptable to all devices,
                                 with ui components and animated interactions</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="#" class="button button--flex button--small project__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="portfolio__content grid swiper-slide">
-                        <img src="assets/img/two.jpg" alt="" class="portfolio__img">
+                    <div class="project__content grid swiper-slide">
+                        <img src="assets/img/two.jpg" alt="" class="project__img">
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Brand Design</h3>
-                            <p class="portfolio__description">Website adaptable to all devices,
+                        <div class="project__data">
+                            <h3 class="project__title">Brand Design</h3>
+                            <p class="project__description">Website adaptable to all devices,
                                 with ui components and animated interactions</p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
+                            <a href="#" class="button button--flex button--small project__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -652,16 +642,16 @@
                 </div>
 
                 <div class="swiper-button-next">
-                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    <i class="uil uil-angle-right-b swiper-project-icon"></i>
                 </div>
                 <div class="swiper-button-prev">
-                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    <i class="uil uil-angle-left-b swiper-project-icon"></i>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
         </section>
 
-        <section class="project section">
+        <!-- <section class="project section">
             <div class="project__bg">
                 <div class="project__container container grid">
                     <div class="project__data">
@@ -676,7 +666,7 @@
                     <img src="assets/img/child-solid.png" alt="" class="project__img">
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- 
         <section class="testimonial section">
             <h2 class="section__title">Testimonial</h2>
@@ -815,39 +805,51 @@
     </main>
     <footer class="footer">
         <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
+            <div class="footer__container grid">
+                <div class="flex align-items-center">
                     <h1 class="footer__title">Noah</h1>
-                    <span class="footer__subtitle">Frontend developer</span>
+                    <span class="footer__subtitle">Back-end Deputy Manager</span>
                 </div>
 
                 <ul class="footer__links">
-                    <li>
+                    <li class="footer__item">
+                        <a href="#home" class="footer__link active-link">Home</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#qualification" class="footer__link">Qualification</a>
+                    </li>
+                    <li class="footer__item">
                         <a href="#services" class="footer__link">Services</a>
                     </li>
-                    <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    <li class="footer__item">
+                        <a href="#project" class="footer__link">Project</a>
                     </li>
-                    <li>
-                        <a href="#contact" class="footer__link">Contactme</a>
+                    <li class="footer__item">
+                        <a href="#contact" class="footer__link">Contact</a>
                     </li>
                 </ul>
 
                 <div class="footer__socials">
-                    <a href="https://www.facebook.com/xiao.qiu.351/" target="_blank" class="footer__social">
+                    <a href="https://www.linkedin.com/in/noah-chiu-854764296/" target="_blank" class="footer__social footer__linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    
+                    <a href="https://www.facebook.com/noah.chiu.351/" target="_blank" class="footer__social footer__facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
 
-                    <a href="https://www.instagram.com/noah_iris/?hl=zh-tw" target="_blank" class="footer__social">
-                        <i class="uil uil-instagram"></i>
+                    <a href="https://www.instagram.com/noah._.sarah/" target="_blank" class="footer__social footer__instagram">
+                        <i class="uil uil-instagram-alt"></i>
                     </a>
 
-                    <a href="https://twitter.com/Noah_Chiu" target="_blank" class="footer__social">
+                    <a href="https://x.com/Noah_Chiu" target="_blank" class="footer__social footer__twitter">
                         <i class="fab fa-twitter"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/qiu-noah-5728aa176/" target="_blank" class="footer__social">
-                        <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
             </div>
